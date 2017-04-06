@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+</head>
+
+<body>
+    <!-- блок section или div или article на всю ширину, позволяют задать фон/ -->
+    <section>
+        <!-- блок, ограничивает ширину, имеет padding по бокам-->
+        <div class="container">
+            <h1>
+                Блок .container > .row > col-*</h1>
+            <!-- блок .row, используется для обертки колонок, имеет отрицательный margin по бокам (компенсирует боковой padding колонок)-->
+            <div class="row">
+
+                <div class="col-md-4">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum officia, vitae, perspiciatis voluptatem enim debitis? Pariatur illo maiores quidem error provident iure aperiam neque, deserunt blanditiis molestias exercitationem harum nihil.</p>
+                    
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum officia, vitae, perspiciatis voluptatem enim debitis? Pariatur illo maiores quidem error provident iure aperiam neque, deserunt blanditiis molestias exercitationem harum nihil.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum officia, vitae, perspiciatis voluptatem enim debitis? Pariatur illo maiores quidem error provident iure aperiam neque, deserunt blanditiis molestias exercitationem harum nihil.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <!-- Если предполагается контент без колонок, то .row и .col-*-12 убираем, в результате текст -->
+            <h1>
+                Блок .container
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quis, nemo incidunt repellendus consectetur nulla cumque! Dicta veritatis culpa laborum tenetur doloribus? Debitis quod voluptatem sapiente, laboriosam, vero reprehenderit nihil.</p>
+            <p>
+                Natus impedit numquam nesciunt, et quibusdam debitis, repudiandae voluptates qui commodi quae quis distinctio quaerat facilis nihil voluptate tempore. Reprehenderit eius, fugiat voluptatibus consectetur dignissimos atque nobis sequi voluptates nisi.</p>
+        </div>
+    </section>
+
+    <!-- блок .container-fluid растягивается на всю ширину, колонки идут на всю шиину сайта -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+                <h1>
+                    Контейнер .container-fluid</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, eveniet. Rerum laudantium, ab nulla. Adipisci quo, illo recusandae ea, obcaecati in voluptatum eos ipsam iure magni aut quaerat quod sed?</p>
+            </div>
+            <div class="col-sm-6">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
