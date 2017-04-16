@@ -2,6 +2,10 @@ body {
   padding-top: 50px;
 }
 
+.col-md-4 {
+    margin-bottom: 20px !important;
+}
+
 section {
     padding: 40px 0 40px 0;
 }
@@ -11,27 +15,27 @@ section {
 }
 
 .jumbotron {
-    background: url(/img/site_showcase_bg.jpg) no-repeat top center;
+    background: #1b222a url(../img/site_showcase_bg.jpg) no-repeat top center;
     color: #fff;
-    height: 503px;
+    height: 500px;
     overflow: none;    
 }
 
-jumbotron h1 {
+.jumbotron h1 {
     margin-top: 60px;
 }
 
-jumbotron p {
+.jumbotron p {
     margin-bottom: 40px;
 }
 
 .jumbotron img.app-btn {
-    height: 55px;
+    width:40%;
     margin-right: 30px;
 }
 
 .jumbotron img.showcase-img {
-    width: 62%;
+    width: 75%;
 }
 
 img.demo {
@@ -52,6 +56,11 @@ section#feature ul li {
     line-height: 2.0em;
     list-style: none;
     
+}
+
+section#feature ul {
+    margin: 0;
+    padding: 0;
 }
 
 section#title-bar {
@@ -84,4 +93,68 @@ footer a {
 
 footer p {
     float: right;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 991px) {
+    .showcase-img {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .jumbotron img.app-btn {
+        width:25%;
+    }
+    
+    .jumbotron {
+        height: 450px !important;
+/*        background-size: 100%;        */
+    }
+    
+    .jumbotron h1 {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .jumbotron img.app-btn {
+        width:25%;
+    }
+    
+    .jumbotron {
+        height: 400px !important;
+/*        background-size: 100%; */
+    }
+    
+    .jumbotron h1 {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .jumbotron {
+        height: 400px !important;
+        background-image: none; 
+        text-align: center;
+    }
+    
+    .jumbotron img.app-btn {
+        width:60%;
+        margin: 0 auto 30px auto;
+        display: block;
+    }
+    
+    section#feature ul li {
+        font-size: 19px !important;
+    }
+    
+    footer p {
+        float: none;
+        text-align: center;
+        padding-top: 20px;
+    }
 }
